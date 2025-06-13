@@ -20,16 +20,17 @@ API RESTful desenvolvida em **ASP.NET Core** para gerenciamento de joias e acess
 
 ## 📁 Estrutura do Projeto
 
-API/
-├── Controllers/               # Controladores (endpoints da API)
-│   └── MaterialController.cs  # CRUD de materiais (joias e acessórios)
-│
-├── Models/                    # Modelos de dados
-│   └── Material.cs            # Entidade Material
-│
-├── Program.cs                 # Configuração e inicialização da aplicação
-│
-└── API.csproj                 # Arquivo de configuração do projeto .NET
+Controllers/
+
+MaterialController.cs → Controlador com os endpoints da API
+
+Models/
+
+Material.cs → Modelo da entidade Material
+
+Program.cs → Configuração e inicialização da aplicação
+
+API.csproj → Arquivo de configuração do projeto .NET
 
 
 ---
@@ -56,6 +57,7 @@ API/
 
 
 📌 Observações
+
 Os dados são armazenados em memória e serão perdidos ao reiniciar a aplicação.
 
 Ideal para prototipagem rápida, testes e APIs sem persistência.
