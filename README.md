@@ -1,66 +1,70 @@
-# 🏗️ API - Materiais de Construção
+💍 API - Joias e Acessórios
+API RESTful desenvolvida em ASP.NET Core para gerenciamento de joias e acessórios. Permite cadastrar, listar, atualizar e remover materiais, com armazenamento temporário em memória — sem necessidade de banco de dados.
 
-API RESTful desenvolvida em ASP.NET Core para gerenciar materiais de construção. Permite cadastrar, listar, atualizar e remover materiais — **sem necessidade de banco de dados**. Os dados são armazenados temporariamente em memória.
+📿 Repositório Oficial
+🔗 GitHub - Caio-e-Miguel/API
 
----
+💎 Tecnologias Utilizadas
+.NET 6 ou superior
 
-## 📂 Repositório Oficial
+ASP.NET Core Web API
 
-🔗 GitHub: [https://github.com/Caio-e-Miguel/API.git](https://github.com/Caio-e-Miguel/API.git)
+Swagger (para documentação e testes da API)
 
----
+📂 Estrutura do Projeto
+bash
+Copiar
+Editar
+API/
+├── Controllers/
+│   └── MaterialController.cs     # Endpoints da API
+├── Models/
+│   └── Material.cs               # Modelo de dados
+├── Program.cs                    # Configuração da aplicação
+└── API.csproj                    # Arquivo de projeto .NET
+✨ Como Executar a API Localmente
+💼 Pré-requisitos
+.NET 6 SDK ou superior
 
-## 🚀 Tecnologias Utilizadas
+Visual Studio, Visual Studio Code ou terminal com CLI do .NET
 
-- [.NET 6 ou superior](https://dotnet.microsoft.com/)
-- ASP.NET Core Web API
-- Swagger (documentação da API)
+📌 Passo a Passo
+Clone o repositório:
 
----
+bash
+Copiar
+Editar
+git clone https://github.com/Caio-e-Miguel/API.git
+cd API
+(Opcional) Baixe arquivos adicionais:
 
-## 📁 Estrutura do Projeto
+Se seu projeto utiliza alguma pasta extra (ex: node_modules ou arquivos compartilhados via OneDrive), baixe-os pelo link abaixo e cole na raiz do projeto:
 
-- `Controllers/MaterialController.cs`: Controlador principal com endpoints da API.
-- `Models/Material.cs`: Modelo de dados da entidade `Material`.
-- `Program.cs`: Arquivo de inicialização e configuração do app.
+🔗 Acessar arquivos no OneDrive
 
----
+Restaure os pacotes NuGet do projeto:
 
-## 🛠️ Como Executar a API Localmente
-
-### ✅ Pré-requisitos
-
-- [.NET 6 SDK ou superior](https://dotnet.microsoft.com/en-us/download/dotnet)
-- Um editor de código como Visual Studio, VS Code ou terminal com CLI do .NET
-
----
-
-### 📌 Passo a Passo para Executar
-
-1. **Clone o repositório:**
-
-   ```bash
-   git clone https://github.com/Caio-e-Miguel/API.git
-   cd API
-   (Importante!) Baixe a pasta node_modules no OneDrive:
-   ---
-2. **⬇️ Baixe a pasta node_modules no OneDrive:**
-🔗 [Clique aqui para acessar a pasta node_modules](https://onedrive.live.com/?redeem=aHR0cHM6Ly8xZHJ2Lm1zL2YvYy85ZDJhMjc0YmVkMGYyMWUzL0VoZlBtdkczbjY1Qm5JNXZ2SGwzUTFrQkdMVzhqUVpWQk14ZnRaTWQyVkFRcGc%5FZT1oSWFtd2o&id=9D2A274BED0F21E3%21sf19acf179fb741ae9c8e6fbc79774359&cid=9D2A274BED0F21E3)
-
-Faça o download e cole a pasta dentro do diretório raiz do projeto, ao lado dos arquivos Program.cs, Controllers, Models, etc.
----
-3. **Restaure os pacotes do projeto:**
-comando no cmd:
+bash
+Copiar
+Editar
 dotnet restore
+Compile a aplicação:
 
----
-4. **Compile a aplicação:**
+bash
+Copiar
+Editar
 dotnet build
+Execute a API:
 
----
-5. **Execute a API:**
+bash
+Copiar
+Editar
 dotnet run
+Acesse a interface Swagger para testar os endpoints:
 
----
-6. **Abra o navegador e acesse a interface Swagger:**
-http://localhost:5000/swagger
+👉 http://localhost:5000/swagger
+
+💠 Observações
+Os dados cadastrados são armazenados temporariamente em memória e serão perdidos ao reiniciar a aplicação.
+
+Ideal para prototipagem rápida, testes e APIs sem persistência.
