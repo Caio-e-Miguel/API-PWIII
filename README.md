@@ -1,70 +1,57 @@
-💍 API - Joias e Acessórios
-API RESTful desenvolvida em ASP.NET Core para gerenciamento de joias e acessórios. Permite cadastrar, listar, atualizar e remover materiais, com armazenamento temporário em memória — sem necessidade de banco de dados.
+# 💎 API - Joias e Acessórios
 
-📿 Repositório Oficial
-🔗 GitHub - Caio-e-Miguel/API
+API RESTful desenvolvida em **ASP.NET Core** para gerenciamento de joias e acessórios. Permite **cadastrar**, **listar**, **atualizar** e **remover** materiais, com armazenamento **temporário em memória** — sem necessidade de banco de dados.
 
-💎 Tecnologias Utilizadas
-.NET 6 ou superior
+---
 
-ASP.NET Core Web API
+## 📂 Repositório Oficial
 
-Swagger (para documentação e testes da API)
+[🔗 GitHub - Caio-e-Miguel/API](https://github.com/Caio-e-Miguel/API.git)
 
-📂 Estrutura do Projeto
-bash
-Copiar
-Editar
+---
+
+## 💼 Tecnologias Utilizadas
+
+- [.NET 6 ou superior](https://dotnet.microsoft.com/)
+- ASP.NET Core Web API
+- Swagger (para documentação e testes da API)
+
+---
+
+## 📁 Estrutura do Projeto
+
 API/
 ├── Controllers/
-│   └── MaterialController.cs     # Endpoints da API
+│ └── MaterialController.cs
 ├── Models/
-│   └── Material.cs               # Modelo de dados
-├── Program.cs                    # Configuração da aplicação
-└── API.csproj                    # Arquivo de projeto .NET
-✨ Como Executar a API Localmente
-💼 Pré-requisitos
-.NET 6 SDK ou superior
+│ └── Material.cs
+├── Program.cs
+└── API.csproj
 
-Visual Studio, Visual Studio Code ou terminal com CLI do .NET
+---
 
-📌 Passo a Passo
-Clone o repositório:
+## 🚀 Como Executar a API Localmente
 
-bash
-Copiar
-Editar
-git clone https://github.com/Caio-e-Miguel/API.git
-cd API
-(Opcional) Baixe arquivos adicionais:
+### Pré-requisitos
 
-Se seu projeto utiliza alguma pasta extra (ex: node_modules ou arquivos compartilhados via OneDrive), baixe-os pelo link abaixo e cole na raiz do projeto:
+- [.NET 6 SDK ou superior](https://dotnet.microsoft.com/en-us/download/dotnet)
+- Visual Studio, Visual Studio Code ou terminal com CLI do .NET
 
-🔗 Acessar arquivos no OneDrive
+---
 
-Restaure os pacotes NuGet do projeto:
+### Passo a Passo
 
-bash
-Copiar
-Editar
-dotnet restore
-Compile a aplicação:
+1. **Clone o repositório:**
 
-bash
-Copiar
-Editar
-dotnet build
-Execute a API:
+   ```bash
+   git clone https://github.com/Caio-e-Miguel/API.git
+   cd API
 
-bash
-Copiar
-Editar
-dotnet run
-Acesse a interface Swagger para testar os endpoints:
 
-👉 http://localhost:5000/swagger
+---
 
-💠 Observações
-Os dados cadastrados são armazenados temporariamente em memória e serão perdidos ao reiniciar a aplicação.
+
+📌 Observações
+Os dados são armazenados em memória e serão perdidos ao reiniciar a aplicação.
 
 Ideal para prototipagem rápida, testes e APIs sem persistência.
