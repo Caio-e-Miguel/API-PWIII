@@ -1,0 +1,79 @@
+body {
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #121212;
+  color: #e0e0e0;
+  margin: 0;
+  padding: 20px;
+}
+
+h1 {
+  text-align: center;
+  color: #f5f5f5;
+}
+
+h2 {
+  margin-bottom: 12px;
+  color: #ffcc00;
+  text-align: center;
+  text-transform: capitalize;
+}
+
+.categoria-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 0;
+  justify-content: center;
+}
+
+.item-card {
+  list-style: none;
+  background: #1e1e1e;
+  border: 1px solid #333;
+  border-radius: 12px;
+  width: 240px;
+  padding: 16px;
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.5);
+  transition: transform 0.2s ease;
+}
+
+.item-card:hover {
+  transform: scale(1.05);
+  border-color: #ff0000;
+}
+
+.item-titulo {
+  font-size: 18px;
+  margin-bottom: 8px;
+  color: #ffffff;
+}
+
+.item-imagem {
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  margin-bottom: 8px;
+  border: 1px solid #555;
+}
+
+.item-descricao {
+  font-size: 14px;
+  color: #cccccc;
+}
+.container-cinza {
+  background-color: gray;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between; /* conteúdo esquerda e ícone direita */
+  align-items: center;
+  color: white;
+  font-size: 24px;
+}
+
+.icon-dots {
+  font-size: 50px;
+  cursor: pointer;
+   margin-left: auto; /* empurra para extrema direita */
+}
+

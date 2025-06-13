@@ -1,0 +1,15 @@
+{
+    "name": "cemaur",
+    "version": "1.0.0",
+    "description": "API e site sobre Jóias e Acessórios",
+    "main": "api/server.js",
+    "scripts": {
+        "start": "node api/server.js"
+    },
+    "author": "Caio Miguel",
+    "license": "MIT",
+    "dependencies": {
+        "cors": "^2.8.5",
+        "express": "^4.21.2"
+    }
+}
